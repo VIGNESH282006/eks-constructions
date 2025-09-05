@@ -1,0 +1,209 @@
+.services-page {
+  min-height: 100vh;
+}
+
+/* Page Header */
+.page-header {
+  background: linear-gradient(135deg, #1e40af 0%, #3b82f6 100%);
+  color: white;
+  padding: 100px 0;
+  text-align: center;
+}
+
+.page-header h1 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.page-header p {
+  font-size: 1.3rem;
+  opacity: 0.9;
+}
+
+/* Services Section */
+.services-section {
+  padding: 100px 0;
+  background-color: #f8fafc;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 2.5rem;
+}
+
+.service-card {
+  background: white;
+  padding: 2.5rem;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+  text-align: center;
+  transition: all 0.3s ease;
+  border: 1px solid rgba(30, 64, 175, 0.1);
+}
+
+.service-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(30, 64, 175, 0.15);
+}
+
+.service-icon {
+  font-size: 4rem;
+  margin-bottom: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 120px;
+  height: 120px;
+  margin: 0 auto 1.5rem;
+  background: linear-gradient(135deg, #eff6ff, #dbeafe);
+  border-radius: 50%;
+}
+
+.service-card h3 {
+  font-size: 1.6rem;
+  color: #1e40af;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.service-card p {
+  color: #64748b;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+.service-features {
+  list-style: none;
+  padding: 0;
+  margin: 1.5rem 0;
+  text-align: left;
+}
+
+.service-features li {
+  color: #374151;
+  padding: 0.3rem 0;
+  font-size: 0.9rem;
+  position: relative;
+  padding-left: 1.5rem;
+}
+
+.service-features li::before {
+  content: '✓';
+  color: #16a34a;
+  font-weight: bold;
+  position: absolute;
+  left: 0;
+}
+
+.service-price {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #dc2626;
+  margin: 1.5rem 0;
+  padding: 0.5rem;
+  background: rgba(220, 38, 38, 0.1);
+  border-radius: 8px;
+}
+
+.service-button {
+  background: linear-gradient(135deg, #1e40af, #3b82f6);
+  color: white;
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 25px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.service-button:hover {
+  background: linear-gradient(135deg, #1e3a8a, #2563eb);
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(30, 64, 175, 0.4);
+}
+
+/* Call to Action */
+.services-cta {
+  padding: 100px 0;
+  background: linear-gradient(135deg, #1e40af 0%, #3b82f6 100%);
+  color: white;
+  text-align: center;
+}
+
+.services-cta h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+.services-cta p {
+  font-size: 1.2rem;
+  margin-bottom: 3rem;
+  opacity: 0.9;
+}
+
+.cta-buttons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.cta-button {
+  padding: 15px 40px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-decoration: none;
+  display: inline-block;
+  min-width: 200px;
+}
+
+.cta-button.primary {
+  background: white;
+  color: #1e40af;
+}
+
+.cta-button.primary:hover {
+  background: #f8fafc;
+  transform: translateY(-2px);
+}
+
+.cta-button.secondary {
+  background: transparent;
+  color: white;
+  border: 2px solid white;
+}
+
+.cta-button.secondary:hover {
+  background: white;
+  color: #1e40af;
+  transform: translateY(-2px);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .page-header h1 {
+    font-size: 2.5rem;
+  }
+  
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .cta-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+}
