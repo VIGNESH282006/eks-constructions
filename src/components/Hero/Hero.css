@@ -9,6 +9,7 @@
   color: white;
 }
 
+/* Video Background */
 .hero-bg-video {
   position: absolute;
   top: 50%;
@@ -24,6 +25,7 @@
   pointer-events: none;
 }
 
+/* Fallback gradient */
 .hero::before {
   content: '';
   position: absolute;
@@ -32,6 +34,7 @@
   z-index: -2;
 }
 
+/* Dark overlay */
 .hero::after {
   content: '';
   position: absolute;
@@ -104,6 +107,8 @@
   transition: all 0.3s ease;
   cursor: pointer;
   text-decoration: none;
+  background: transparent;
+  border: none;
 }
 
 .hero-button.primary {

@@ -1,29 +1,26 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import videoSrc from '../../assets/videos/hero-bg.mp4';
 import './Hero.css';
 
 const Hero = () => {
   const scrollToContact = () => {
-    document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
+    const el = document.getElementById('contact');
+    if (el) el.scrollIntoView({ behavior: 'smooth' });
   };
-
-  // PUBLIC_URL will resolve to '/eks-constructions' in production and '' locally
-  const videoSrc = `${process.env.PUBLIC_URL}/videos/hero-bg.mp4`;
 
   return (
     <section className="hero" id="home">
       {/* Video Background */}
       <video
         className="hero-bg-video"
+        src={videoSrc}
         autoPlay
         loop
         muted
         playsInline
         preload="auto"
-      >
-        <source src={videoSrc} type="video/mp4" />
-        Your browser does not support the video tag.
-      </video>
+      />
 
       <div className="hero-container">
         <div className="hero-content">
@@ -36,9 +33,9 @@ const Hero = () => {
             <Link to="/services" className="hero-button primary">
               OUR SERVICES
             </Link>
-            <Link to="/contact" className="hero-button secondary" onClick={scrollToContact}>
+            <button onClick={scrollToContact} className="hero-button secondary">
               GET QUOTE
-            </Link>
+            </button>
           </div>
         </div>
       </div>
