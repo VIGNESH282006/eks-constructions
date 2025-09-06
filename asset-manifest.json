@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/eks-constructions/static/css/main.c8a60b63.css",
-    "main.js": "/eks-constructions/static/js/main.97717aef.js",
+    "main.css": "/eks-constructions/static/css/main.5cd54c63.css",
+    "main.js": "/eks-constructions/static/js/main.b4fe75fa.js",
     "static/js/453.140f0b2b.chunk.js": "/eks-constructions/static/js/453.140f0b2b.chunk.js",
     "static/media/eks-logo.png": "/eks-constructions/static/media/eks-logo.78f47d7f4b3e510a0a73.png",
     "index.html": "/eks-constructions/index.html",
-    "main.c8a60b63.css.map": "/eks-constructions/static/css/main.c8a60b63.css.map",
-    "main.97717aef.js.map": "/eks-constructions/static/js/main.97717aef.js.map",
+    "main.5cd54c63.css.map": "/eks-constructions/static/css/main.5cd54c63.css.map",
+    "main.b4fe75fa.js.map": "/eks-constructions/static/js/main.b4fe75fa.js.map",
     "453.140f0b2b.chunk.js.map": "/eks-constructions/static/js/453.140f0b2b.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c8a60b63.css",
-    "static/js/main.97717aef.js"
+    "static/css/main.5cd54c63.css",
+    "static/js/main.b4fe75fa.js"
   ]
 }
