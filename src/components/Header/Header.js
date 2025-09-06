@@ -3,6 +3,7 @@ import { Link, useLocation } from 'react-router-dom';
 import './Header.css';
 import logo from '../../assests/images/eks-logo.png';
 
+
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [logoError, setLogoError] = useState(false);
@@ -71,6 +72,15 @@ const Header = () => {
               onClick={closeMenu}
             >
               Services
+            </Link>
+          </li>
+          <li>
+            <Link
+              to="/construction-package"
+              className={isActive('/construction-package') ? 'nav-link active' : 'nav-link'}
+              onClick={closeMenu}
+            >
+              Packages
             </Link>
           </li>
           <li>

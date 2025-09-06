@@ -8,6 +8,7 @@ import Services from './pages/Services/Services';
 import Contact from './pages/Contact/Contact';
 import Careers from './pages/Careers/Careers';
 import Team from './pages/Team/Team';
+import ConstructionPackage from './pages/ConstructionPackage/ConstructionPackage';
 import ScrollToTop from './components/ScrollToTop/ScrollToTop';
 import './App.css';
 
@@ -23,10 +24,10 @@ function App() {
             <Route path="/home" element={<Navigate to="/" replace />} />
             <Route path="/about" element={<About />} />
             <Route path="/services" element={<Services />} />
+            <Route path="/construction-package" element={<ConstructionPackage />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/careers" element={<Careers />} />
             <Route path="/team" element={<Team />} />
-            {/* Catch all route - redirect to home */}
             <Route path="*" element={<Navigate to="/" replace />} />
           </Routes>
         </main>

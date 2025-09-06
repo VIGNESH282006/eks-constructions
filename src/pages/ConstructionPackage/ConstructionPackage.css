@@ -1,0 +1,458 @@
+.construction-package-page {
+  min-height: 100vh;
+}
+
+/* Cost Calculator Section */
+.cost-calculator {
+  padding: 80px 0;
+  background-color: #f8fafc;
+}
+
+.cost-calculator h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #1e40af;
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+.calculator-subtitle {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #64748b;
+  margin-bottom: 3rem;
+}
+
+.calculator-controls {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  margin-bottom: 3rem;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.control-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.control-group label {
+  font-weight: 600;
+  color: #374151;
+}
+
+.control-group select {
+  padding: 1rem;
+  border: 2px solid #e5e7eb;
+  border-radius: 8px;
+  font-size: 1rem;
+  background: white;
+}
+
+.control-group select:focus {
+  outline: none;
+  border-color: #1e40af;
+}
+
+/* Calculation Table */
+.calculation-table {
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  margin-bottom: 3rem;
+}
+
+.table-header {
+  display: grid;
+  grid-template-columns: 3fr 2fr 1fr 1fr 1fr;
+  gap: 1rem;
+  background: #1e40af;
+  color: white;
+  padding: 1.5rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+.table-row {
+  display: grid;
+  grid-template-columns: 3fr 2fr 1fr 1fr 1fr;
+  gap: 1rem;
+  padding: 1.5rem;
+  border-bottom: 1px solid #e5e7eb;
+  align-items: center;
+}
+
+.table-row:nth-child(even) {
+  background-color: #f9fafb;
+}
+
+.col-work {
+  text-align: left;
+  color: #374151;
+  font-weight: 500;
+}
+
+.col-area {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.col-area input {
+  padding: 0.8rem;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  font-size: 0.9rem;
+}
+
+.col-area input:focus {
+  outline: none;
+  border-color: #1e40af;
+}
+
+.col-unit, .col-rate, .col-cost {
+  text-align: center;
+  font-weight: 600;
+  color: #1e40af;
+}
+
+.table-total {
+  display: grid;
+  grid-template-columns: 4fr 1fr;
+  gap: 1rem;
+  padding: 2rem 1.5rem;
+  background: linear-gradient(135deg, #1e40af, #3b82f6);
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.total-label {
+  text-align: right;
+}
+
+.total-amount {
+  text-align: center;
+}
+
+/* Calculator CTA */
+.calculator-cta {
+  text-align: center;
+}
+
+.estimate-button {
+  background: linear-gradient(135deg, #dc2626, #ef4444);
+  color: white;
+  padding: 1.2rem 3rem;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+  display: inline-block;
+  box-shadow: 0 5px 15px rgba(220, 38, 38, 0.4);
+}
+
+.estimate-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(220, 38, 38, 0.6);
+  background: linear-gradient(135deg, #b91c1c, #dc2626);
+}
+
+/* Packages Section */
+.packages-section {
+  padding: 100px 0;
+  background: white;
+}
+
+.packages-section h2 {
+  text-align: center;
+  font-size: 3rem;
+  color: #1e40af;
+  margin-bottom: 4rem;
+  font-weight: 700;
+}
+
+.packages-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.package-card {
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: all 0.3s ease;
+  border: 1px solid #e5e7eb;
+}
+
+.package-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+.package-header {
+  text-align: center;
+  padding: 2rem;
+  color: white;
+  position: relative;
+  background: linear-gradient(135deg, var(--header-color), var(--header-color-light));
+}
+
+.package-card:nth-child(1) .package-header {
+  --header-color: #1e40af;
+  --header-color-light: #3b82f6;
+}
+
+.package-card:nth-child(2) .package-header {
+  --header-color: #3b82f6;
+  --header-color-light: #60a5fa;
+}
+
+.package-card:nth-child(3) .package-header {
+  --header-color: #dc2626;
+  --header-color-light: #ef4444;
+}
+
+.package-header::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, rgba(255,255,255,0.1), transparent);
+}
+
+.package-header h3 {
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  position: relative;
+  z-index: 1;
+}
+
+.package-price {
+  position: relative;
+  z-index: 1;
+}
+
+.price {
+  font-size: 2.5rem;
+  font-weight: 700;
+  display: block;
+}
+
+.unit {
+  font-size: 1rem;
+  opacity: 0.9;
+}
+
+.package-features {
+  padding: 0;
+}
+
+.feature-category {
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.category-header {
+  width: 100%;
+  padding: 1.2rem 2rem;
+  background: none;
+  border: none;
+  text-align: left;
+  font-weight: 600;
+  color: #374151;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background-color 0.3s ease;
+}
+
+.category-header:hover {
+  background-color: #f9fafb;
+}
+
+.toggle-icon {
+  font-size: 1.2rem;
+  color: #1e40af;
+  font-weight: bold;
+}
+
+.category-items {
+  padding: 0 2rem 1rem 2rem;
+  background-color: #f9fafb;
+}
+
+.feature-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.8rem;
+  padding: 0.5rem 0;
+  color: #64748b;
+  line-height: 1.5;
+}
+
+.check-icon {
+  color: #16a34a;
+  font-weight: bold;
+  margin-top: 0.1rem;
+}
+
+.package-footer {
+  padding: 2rem;
+  text-align: center;
+}
+
+.specification-button {
+  background: linear-gradient(135deg, #1e40af, #3b82f6);
+  color: white;
+  padding: 1rem 2rem;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+  display: inline-block;
+}
+
+.specification-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(30, 64, 175, 0.4);
+  background: linear-gradient(135deg, #1e3a8a, #2563eb);
+}
+
+/* Package CTA */
+.package-cta {
+  padding: 100px 0;
+  background: linear-gradient(135deg, #1e40af 0%, #3b82f6 100%);
+  color: white;
+  text-align: center;
+}
+
+.package-cta h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+.package-cta p {
+  font-size: 1.2rem;
+  margin-bottom: 3rem;
+  opacity: 0.9;
+}
+
+.cta-buttons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.cta-btn {
+  padding: 15px 40px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border-radius: 50px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  min-width: 220px;
+}
+
+.cta-btn.primary {
+  background: white;
+  color: #1e40af;
+}
+
+.cta-btn.primary:hover {
+  background: #f8fafc;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(255, 255, 255, 0.3);
+}
+
+.cta-btn.secondary {
+  background: transparent;
+  color: white;
+  border: 2px solid white;
+}
+
+.cta-btn.secondary:hover {
+  background: white;
+  color: #1e40af;
+  transform: translateY(-2px);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .calculator-controls {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  
+  .table-header,
+  .table-row {
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
+    text-align: left;
+  }
+  
+  .table-header {
+    display: none;
+  }
+  
+  .table-row {
+    padding: 1rem;
+    border: 1px solid #e5e7eb;
+    margin-bottom: 0.5rem;
+    border-radius: 8px;
+  }
+  
+  .col-work::before { content: "Work: "; font-weight: bold; }
+  .col-unit::before { content: "Unit: "; font-weight: bold; }
+  .col-rate::before { content: "Rate: "; font-weight: bold; }
+  .col-cost::before { content: "Cost: "; font-weight: bold; }
+  
+  .table-total {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+  
+  .packages-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .cta-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .cost-calculator h1 {
+    font-size: 2rem;
+  }
+  
+  .packages-section h2 {
+    font-size: 2.5rem;
+  }
+  
+  .price {
+    font-size: 2rem;
+  }
+}
